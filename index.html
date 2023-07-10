@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Hunian | Landing Page</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="mw-100 w-100">
+      <!-- Hero background -->
+      <div
+        class="w-100 this-is-hero"
+        style="
+          background-image: url('./assets/images/hero-background.jpg');
+        "
+      >
+        <div class="container">
+          <!-- Navbar goes here -->
+          <nav class="navbar navbar-expand-lg bg-transparent py-4">
+            <div class="container-fluid">
+              <a class="navbar-brand me-5" href="#">
+                <img
+                  src="./assets/images/hunian_logo.svg"
+                  alt="Logo"
+                  class="d-inline-block align-text-top"
+                />
+              </a>
+              <button
+                class="navbar-toggler border-0 rounded-0 shadow-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style="outline: none"
+              >
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <img
+                  src="./assets/images/candle-2.svg"
+                  alt="hunian_logo"
+                />
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul
+                  class="navbar-nav gap-lg-4 me-auto font-hk-grotesk"
+                >
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-white fw-semibold"
+                      aria-current="page"
+                      href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fw-light" href="#"
+                      >Product</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fw-light" href="#"
+                      >Our Services</a
+                    >
+                  </li>
+                </ul>
+                <div class="d-flex">
+                  <button
+                    class="btn btn-primary text-white font-hk-grotesk fw-semibold border border-white"
+                    style="border-radius: 0%"
+                  >
+                    Registration
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Hero grid goes here -->
+          <div class="row py-5">
+            <div class="col col-8">
+              <div class="d-flex flex-column align-items-start gap-5">
+                <h1
+                  class="text-white font-clash-grotesk fw-semibold lh-1"
+                  style="
+                    font-size: 100px;
+                    filter: drop-shadow(2px 3px 2px #5f5f5f);
+                  "
+                >
+                  The best<br />property<br />that you<br />deserve<span
+                    style="color: #ff8a00"
+                    >.</span
+                  >
+                </h1>
+                <div class="d-flex flex-column align-items-start">
+                  <ul
+                    class="nav nav-tabs border-0 bg-white"
+                    id="myTab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active border-0 rounded-0 font-hk-grotesk fw-semibold px-4 py-2"
+                        id="home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#home-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="home-tab-pane"
+                        aria-selected="true"
+                        style="font-size: 16px"
+                      >
+                        Buying
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link border-0 rounded-0 font-hk-grotesk fw-semibold px-4 py-2"
+                        id="profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#profile-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="profile-tab-pane"
+                        aria-selected="false"
+                        style="font-size: 16px"
+                      >
+                        Renting
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="home-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                      tabindex="0"
+                    >
+                      <form class="row g-3">
+                        <div class="col-auto">
+                          <div
+                            class="input-group mb-3 border-0 rounded-0"
+                          >
+                            <span
+                              class="input-group-text bg-white border-0"
+                              id="basic-addon1"
+                              ><img
+                                src="./assets/images/search-normal.svg"
+                                alt="search"
+                            /></span>
+                            <input
+                              type="text"
+                              class="form-control border-0"
+                              placeholder="Username"
+                              aria-label="Username"
+                              aria-describedby="basic-addon1"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <button
+                            type="submit"
+                            class="btn btn-primary mb-3 text-white font-hk-grotesk"
+                          >
+                            Book a call
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="profile-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="profile-tab"
+                      tabindex="0"
+                    >
+                      ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
