@@ -8,6 +8,11 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Hunian | Landing Page</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/images/web_icon.svg"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </head>
@@ -22,7 +27,9 @@
       >
         <div class="container">
           <!-- Navbar goes here -->
-          <nav class="navbar navbar-expand-lg bg-transparent py-4">
+          <nav
+            class="navbar navbar-custom navbar-expand-lg bg-transparent py-4 px-2 px-xl-0 mx-0"
+          >
             <div class="container-fluid">
               <a class="navbar-brand me-5" href="#">
                 <img
@@ -47,9 +54,12 @@
                   alt="hunian_logo"
                 />
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+              <div
+                class="collapse navbar-collapse py-3 py-xl-0 ps-1 px-xl-0"
+                id="navbarNav"
+              >
                 <ul
-                  class="navbar-nav gap-lg-4 me-auto font-hk-grotesk"
+                  class="navbar-nav gap-lg-4 me-auto mb-3 mb-xl-0 font-hk-grotesk"
                 >
                   <li class="nav-item">
                     <a
@@ -83,22 +93,23 @@
           </nav>
 
           <!-- Hero grid goes here -->
-          <div class="row py-5">
-            <div class="col col-8">
-              <div class="d-flex flex-column align-items-start gap-5">
+          <div class="hero-container row px-4 px-xl-4">
+            <div class="col-lg-8 p-0">
+              <div
+                class="d-flex flex-column align-items-start hero-col-1"
+              >
                 <h1
-                  class="text-white font-clash-grotesk fw-semibold lh-1"
-                  style="
-                    font-size: 100px;
-                    filter: drop-shadow(2px 3px 2px #5f5f5f);
-                  "
+                  class="hero-text-main text-white font-clash-grotesk fw-semibold lh-1"
+                  style="filter: drop-shadow(2px 3px 2px #5f5f5f)"
                 >
                   The best<br />property<br />that you<br />deserve<span
                     style="color: #ff8a00"
                     >.</span
                   >
                 </h1>
-                <div class="d-flex flex-column align-items-start">
+                <div
+                  class="d-none d-xl-flex flex-column align-items-start"
+                >
                   <ul
                     class="nav nav-tabs border-0 bg-white"
                     id="myTab"
@@ -143,6 +154,46 @@
                       aria-labelledby="home-tab"
                       tabindex="0"
                     >
+                      <form class="row">
+                        <div class="col-auto">
+                          <div
+                            class="input-group mb-3 border-0 rounded-0"
+                          >
+                            <span
+                              class="input-group-text bg-white border-0"
+                              id="basic-addon1"
+                              ><img
+                                src="./assets/images/search-normal.svg"
+                                alt="search"
+                            /></span>
+                            <input
+                              type="text"
+                              class="form-control border-0 shadow-none"
+                              style="width: 350px; height: 82px"
+                              placeholder="City, Neighborhood, Address"
+                              aria-label="Username"
+                              aria-describedby="basic-addon1"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <button
+                            type="submit"
+                            class="btn btn-primary mb-3 text-white font-hk-grotesk p-0 d-flex justify-content-center align-items-center"
+                            style="width: 195px; height: 82px"
+                          >
+                            Book a call
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="profile-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="profile-tab"
+                      tabindex="0"
+                    >
                       <form class="row g-3">
                         <div class="col-auto">
                           <div
@@ -157,8 +208,9 @@
                             /></span>
                             <input
                               type="text"
-                              class="form-control border-0"
-                              placeholder="Username"
+                              class="form-control border-0 shadow-none"
+                              style="width: 350px; height: 82px"
+                              placeholder="City, Neighborhood, Address"
                               aria-label="Username"
                               aria-describedby="basic-addon1"
                             />
@@ -167,27 +219,204 @@
                         <div class="col-auto">
                           <button
                             type="submit"
-                            class="btn btn-primary mb-3 text-white font-hk-grotesk"
+                            class="btn btn-primary mb-3 text-white font-hk-grotesk p-0 d-flex justify-content-center align-items-center"
+                            style="width: 195px; height: 82px"
                           >
                             Book a call
                           </button>
                         </div>
                       </form>
                     </div>
-                    <div
-                      class="tab-pane fade"
-                      id="profile-tab-pane"
-                      role="tabpanel"
-                      aria-labelledby="profile-tab"
-                      tabindex="0"
-                    >
-                      ...
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">2</div>
+            <div
+              class="col-lg-4 px-0 row align-items-end justify-content-end m-0 mt-5 mt-xl-0 pt-5 pt-xl-0 pb-0 pb-xl-5"
+            >
+              <div class="d-flex flex-column align-items-end p-0 m-0">
+                <div
+                  class="p-3 border border-white d-flex flex-column align-items-start gap-2"
+                  style="backdrop-filter: blur(15px)"
+                >
+                  <img
+                    src="/assets/images/eye.svg"
+                    alt="eye"
+                    class="text-white"
+                  />
+                  <p
+                    class="font-hk-grotesk text-white fw-semibold mb-0"
+                  >
+                    Get a comfortable housing offer for you as easy as
+                    you blink an eye
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="w-100 my-5">
+        <div class="container">
+          <!-- tabs -->
+          <div class="row px-4 px-xl-0 d-block d-xl-none mb-5">
+            <div class="col-12 p-0 m-0">
+              <div
+                class="d-flex align-items-start justify-content-start"
+              >
+                <ul
+                  class="nav nav-tabs border-0 align-items-start"
+                  style="background-color: #f0f0f0"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active border-0 rounded-0 font-hk-grotesk fw-normal px-4 py-2"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-tab-pane"
+                      aria-selected="true"
+                      style="font-size: 16px"
+                    >
+                      Buying
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link border-0 rounded-0 font-hk-grotesk fw-normal px-4 py-2"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-tab-pane"
+                      aria-selected="false"
+                      style="font-size: 16px"
+                    >
+                      Renting
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <form class="row">
+                    <div class="col-12">
+                      <div class="input-group mb-3 border rounded-0">
+                        <span
+                          class="input-group-text bg-white border-0"
+                          id="basic-addon1"
+                          ><img
+                            src="./assets/images/search-normal.svg"
+                            alt="search"
+                        /></span>
+                        <input
+                          type="text"
+                          class="form-control border-0 shadow-none"
+                          style="height: 60px"
+                          placeholder="City, Neighborhood, Address"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button
+                        type="submit"
+                        class="btn btn-primary mb-3 text-white font-hk-grotesk p-0 d-flex justify-content-center align-items-center"
+                        style="width: 100%; height: 60px"
+                      >
+                        Book a call
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <form class="row">
+                    <div class="col-12">
+                      <div class="input-group mb-3 border rounded-0">
+                        <span
+                          class="input-group-text bg-white border-0"
+                          id="basic-addon1"
+                          ><img
+                            src="./assets/images/search-normal.svg"
+                            alt="search"
+                        /></span>
+                        <input
+                          type="text"
+                          class="form-control border-0 shadow-none"
+                          style="height: 60px"
+                          placeholder="City, Neighborhood, Address"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button
+                        type="submit"
+                        class="btn btn-primary mb-3 text-white font-hk-grotesk p-0 d-flex justify-content-center align-items-center"
+                        style="width: 100%; height: 60px"
+                      >
+                        Book a call
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-4 px-xl-4 justify-content-between">
+            <div
+              class="section2-image col-lg-4 p-0"
+              style="height: 537px"
+            ></div>
+            <div
+              class="col-lg-7 p-0 bg-transparent d-flex flex-column align-items-start gap-4 mt-3 mt-xl-0"
+            >
+              <div
+                class="rounded-circle p-4 mb-5 d-none d-xl-block"
+                style="
+                  background-color: #e1e1e1;
+                  border: 1px solid #ff8a00;
+                "
+              >
+                <img src="/assets/images/like.svg" alt="like" />
+              </div>
+              <h1
+                class="section2-head1 font-clash-grotesk fw-medium text-black"
+              >
+                why can you trust<br />everything we<br />have to
+                offer?
+              </h1>
+              <p
+                class="section2-desc font-inter text-black fw-normal"
+                style="text-align: justify"
+              >
+                We realize trust is important for you in building a
+                good relationship. That's why we are here as a smart
+                solution for you
+              </p>
+            </div>
           </div>
         </div>
       </div>
