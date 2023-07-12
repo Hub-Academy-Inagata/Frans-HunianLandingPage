@@ -170,3 +170,39 @@ $screen-xl-min: 1200px;
         font-size: 24px !important;
     }
 }
+
+.section2-reasons h3 {
+    font-size: 24px !important;
+
+    @include xl {
+        font-size: 32px !important;
+    }
+}
+
+.section2-reasons p {
+    font-size: 14px !important;
+
+    @include xl {
+        font-size: 22px !important;
+    }
+}
+
+.section3 {
+    .property-card {
+        h4 {
+            font-size: 14px !important;
+        }
+
+        h3 {
+            @include xl {
+                font-size: 32px !important;
+            }
+        }
+
+        p {
+            @include xl {
+                font-size: 16px !important;
+            }
+        }
+    }
+}

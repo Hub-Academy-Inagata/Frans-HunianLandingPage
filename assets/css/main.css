@@ -12141,4 +12141,36 @@ textarea.form-control-lg {
   .section2-desc {
     font-size: 24px !important;
   }
+}
+
+.section2-reasons h3, .section2-reasons .h3 {
+  font-size: 24px !important;
+}
+@media (min-width: 1200px) {
+  .section2-reasons h3, .section2-reasons .h3 {
+    font-size: 32px !important;
+  }
+}
+
+.section2-reasons p {
+  font-size: 14px !important;
+}
+@media (min-width: 1200px) {
+  .section2-reasons p {
+    font-size: 22px !important;
+  }
+}
+
+.section3 .property-card h4, .section3 .property-card .h4 {
+  font-size: 14px !important;
+}
+@media (min-width: 1200px) {
+  .section3 .property-card h3, .section3 .property-card .h3 {
+    font-size: 32px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .section3 .property-card p {
+    font-size: 16px !important;
+  }
 }/*# sourceMappingURL=main.css.map */
