@@ -12061,12 +12061,14 @@ textarea.form-control-lg {
   left: 0 !important;
   right: 0 !important;
   z-index: 10 !important;
+  background-color: rgba(0, 155, 233, 0.2666666667) !important;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .navbar-custom {
     -webkit-backdrop-filter: blur(0px) !important;
             backdrop-filter: blur(0px) !important;
     position: relative !important;
+    background-color: transparent !important;
   }
 }
 
@@ -12161,6 +12163,22 @@ textarea.form-control-lg {
   }
 }
 
+.section3 {
+  background-color: white !important;
+}
+@media (min-width: 992px) {
+  .section3 {
+    background-color: #F6F6F6 !important;
+  }
+}
+.section3 .property-card {
+  border: 1px solid #E7E7E7 !important;
+}
+@media (min-width: 992px) {
+  .section3 .property-card {
+    border: 0px solid #E7E7E7 !important;
+  }
+}
 .section3 .property-card h4, .section3 .property-card .h4 {
   font-size: 14px !important;
 }
@@ -12173,4 +12191,100 @@ textarea.form-control-lg {
   .section3 .property-card p {
     font-size: 16px !important;
   }
+}
+
+.section4 .box1 {
+  background-color: #009CE9 !important;
+  padding-top: 24px !important;
+  padding-bottom: 48px !important;
+}
+@media (min-width: 992px) {
+  .section4 .box1 {
+    padding-top: 180px !important;
+    padding-bottom: 120px !important;
+  }
+}
+.section4 .box1 .box1-container h1, .section4 .box1 .box1-container .h1 {
+  font-size: 38px !important;
+}
+.section4 .box1 .box1-container p {
+  font-size: 16px !important;
+}
+.section4 .box1 .box1-container img {
+  height: 34px !important;
+}
+@media (min-width: 576px) {
+  .section4 .box1 .box1-container {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+@media (min-width: 768px) {
+  .section4 .box1 .box1-container {
+    padding-left: 36px !important;
+    padding-right: 36px !important;
+  }
+}
+@media (min-width: 992px) {
+  .section4 .box1 .box1-container {
+    padding-left: 28px !important;
+  }
+  .section4 .box1 .box1-container h1, .section4 .box1 .box1-container .h1 {
+    font-size: 56px !important;
+  }
+  .section4 .box1 .box1-container p {
+    font-size: 24px !important;
+  }
+  .section4 .box1 .box1-container img {
+    height: 56px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .section4 .box1 .box1-container {
+    padding-left: 42px !important;
+  }
+  .section4 .box1 .box1-container h1, .section4 .box1 .box1-container .h1 {
+    font-size: 56px !important;
+  }
+}
+@media (min-width: 1366px) {
+  .section4 .box1 .box1-container {
+    padding-left: 125px !important;
+  }
+  .section4 .box1 .box1-container h1, .section4 .box1 .box1-container .h1 {
+    font-size: 56px !important;
+  }
+}
+@media (min-width: 1920px) {
+  .section4 .box1 .box1-container {
+    padding-left: 312px !important;
+  }
+  .section4 .box1 .box1-container h1, .section4 .box1 .box1-container .h1 {
+    font-size: 56px !important;
+  }
+}
+.section4 .box2 {
+  background-color: #F6F6F6 !important;
+}
+@media screen and (max-width: 576px) {
+  .section4 .box2 {
+    height: 428px !important;
+  }
+}
+@media (min-width: 992px) {
+  .section4 .box2 {
+    background-color: white !important;
+  }
+}
+
+.section5 h1, .section5 .h1 {
+  font-size: 36px !important;
+}
+@media (min-width: 992px) {
+  .section5 h1, .section5 .h1 {
+    font-size: 44px !important;
+  }
+}
+.section5 .input-group span, .section5 .input-group input {
+  background-color: #EAEAEA !important;
 }/*# sourceMappingURL=main.css.map */
