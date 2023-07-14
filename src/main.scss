@@ -90,6 +90,10 @@ $screen-xl-min: 1200px;
     font-family: 'Inter', sans-serif !important;
 }
 
+body {
+    overflow-x: hidden !important;
+}
+
 .navbar-custom {
     backdrop-filter: blur(100px) !important;
     position: fixed !important;
@@ -103,6 +107,20 @@ $screen-xl-min: 1200px;
         backdrop-filter: blur(0px) !important;
         position: relative !important;
         background-color: transparent !important;
+
+        li {
+            margin-bottom: 0 !important;
+            padding: 0 !important;
+            line-height: 0 !important;
+            background-color: red !important;
+        }
+
+        li a {
+            margin-bottom: 0 !important;
+            padding: 0 !important;
+            line-height: 0 !important;
+            background-color: red !important;
+        }
     }
 }
 
@@ -237,12 +255,24 @@ $screen-xl-min: 1200px;
                 font-size: 38px !important;
             }
 
+            h5 {
+                font-size: 20px !important;
+                font-weight: 400 !important;
+                margin-bottom: 0 !important;
+            }
+
             p {
                 font-size: 16px !important;
             }
 
-            img {
-                height: 34px !important;
+            .badges img:first-child {
+                width: 101px !important;
+                height: 36px !important;
+            }
+
+            .badges img:last-child {
+                width: 114px !important;
+                height: 36px !important;
             }
 
             // @include rwd(250px) {
@@ -271,7 +301,13 @@ $screen-xl-min: 1200px;
                     font-size: 24px !important;
                 }
 
-                img {
+                .badges img:first-child {
+                    width: 165px !important;
+                    height: 56px !important;
+                }
+
+                .badges img:last-child {
+                    width: 187px !important;
                     height: 56px !important;
                 }
             }
@@ -327,5 +363,55 @@ $screen-xl-min: 1200px;
 
     .input-group span, .input-group input {
         background-color: #EAEAEA !important;
+    }
+}
+
+footer {
+    background-color: #F6F6F6 !important;
+
+    @include lg {
+        background-color: white !important;
+    }
+
+    .box1 {
+        img {
+            width: 101px !important;
+            height: 32px !important;
+
+            @include lg {
+                width: 167px !important;
+                height: 53px !important;
+            }
+        }
+
+        p {
+            font-size: 14px !important;
+
+            @include lg {
+                font-size: 16px !important;
+                width: 380px !important;
+            }
+        }
+    }
+
+    .box2 {
+        img {
+            width: 24px !important;
+            height: 24px !important;
+
+            @include lg {
+                width: 28px !important;
+                height: 28px !important;
+            }
+        }
+
+        p {
+            font-size: 16px !important;
+            margin: 0 !important;
+
+            @include lg {
+                font-size: 18px !important;
+            }
+        }
     }
 }
