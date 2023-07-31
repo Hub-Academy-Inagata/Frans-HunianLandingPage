@@ -12084,7 +12084,7 @@ body {
 }
 
 .section2-image {
-  background-image: url("./assets/images/section2-image.jpg") !important;
+  background-image: url("../assets/images/section2-image.jpg") !important;
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
